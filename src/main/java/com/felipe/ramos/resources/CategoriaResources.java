@@ -1,7 +1,6 @@
 package com.felipe.ramos.resources;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +23,8 @@ public class CategoriaResources {
 	public ResponseEntity<?> find(@PathVariable Integer id) {
 		Categoria obj=service.buscar(id);
 		return ResponseEntity.ok().body(obj);
+		
+		
 	}
 
 }
